@@ -4,7 +4,5 @@ body {
     font-family: 'Poppins', sans-serif;
     color: var(--text-color);
     margin: 0;
-    --header-color: #4f6de6;
-    --sidebar-color: #68cdf5;
     --text-color: #323232;
 }

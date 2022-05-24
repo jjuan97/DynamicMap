@@ -1,0 +1,28 @@
+<div class="card mx-2 my-4">
+  <div class="card-header">
+    <p class="card-header-title has-text-primary">
+      Markers Coordinates Info
+    </p>
+  </div>
+  <div class="card-content sidebare-overflow">
+    <div class="content">
+      <table>
+        <thead>
+          <tr>
+            <td class="has-text-info"><b>Latitude</b></td>
+            <td class="has-text-info"><b>Longitude</b></td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let marker of markers">
+            <td>{{marker.getLat() | number: '0.0-5'}}</td>
+            <td>{{marker.getLon() | number: '0.0-5'}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <footer class="card-footer">
+    <a (click)="cleanMarkers()" id="clean-button" class="card-footer-item">Clean all marks</a>
+  </footer>
+</div>

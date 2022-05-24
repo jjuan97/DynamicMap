@@ -1,0 +1,16 @@
+<div class="card mx-2 my-4">
+  <div class="card-content p-0">
+    <div id="ol-map" class="map-container"></div>
+    <div id="popup" class="ol-popup">
+      <a (click)="closePopup()" href="#" id="popup-closer" class="ol-popup-closer"></a>
+      <div id="popup-content">
+        <p>
+          <b>Latitude:</b> {{lat}}
+        </p>
+        <p>
+          <b>Longitude:</b> {{lon}}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
